@@ -10,14 +10,19 @@ function checkBirthdayLucky() {
   var inputLuckyNumber = luckyNumber.value;
   var result = sumOfDate(dob);
   if (dob && inputLuckyNumber) {
-    if (result % inputLuckyNumber === 0) {
-      outputEl.innerText = "Yay!! your birthday is lucky";
-    } else {
-      outputEl.innerText = "OOpss!! your birthday is not lucky";
+    if(inputLuckyNumber>0){
+      if (result % inputLuckyNumber === 0) {
+        outputEl.innerText = "Yay!! your birthday is lucky";
+      } else {
+        outputEl.innerText = "OOpss!! your birthday is not lucky";
+      }
+
+    } else{
+      outputEl.innerText = "Lucky number should be positive";
+      }
+    }else {
+      output.innerText = "Please Enter Valid Details";
     }
-  } else {
-    output.innerText = "Please Enter Valid Details";
-  }
 }
 
 function sumOfDate(dob) {
