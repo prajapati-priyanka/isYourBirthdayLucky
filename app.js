@@ -33,9 +33,9 @@ function sumOfDate(dob) {
   }
   return sum;
 }
-function crossMarkHandler() {
-  privacyMsg.style.display = "none";
-}
+// function crossMarkHandler() {
+//   privacyMsg.style.display = "none";
+// }
 
 checkButton.addEventListener("click", checkBirthdayLucky);
-crossMark.addEventListener("click", crossMarkHandler);
+// crossMark.addEventListener("click", crossMarkHandler);
