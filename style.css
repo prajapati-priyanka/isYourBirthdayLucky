@@ -30,21 +30,19 @@ body {
   padding: 1rem;
 }
 #privacy-msg {
-  background-color: var(--secondary-color);
-  font-size: 1.3rem;
+  
+  font-size: 1.1rem;
   text-align: center;
   padding: 1rem 0;
-  margin: auto;
-  margin-bottom: 0.5rem;
+  /* margin: auto; */
   width: 90%;
   border-radius: 0.4rem;
 }
-#privacy-msg-cross {
-  font-size: 0.6rem;
-  opacity: 0.8;
-  float: right;
-  margin-right: 1rem;
-  cursor: pointer;
+#privacy-msg span {
+ background-color:var(--secondary-color);
+ padding: 0.3rem;
+  font-size: 1rem;
+ 
 }
 #description {
   font-weight: bold;
